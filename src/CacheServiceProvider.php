@@ -2,11 +2,11 @@
 
 namespace Greg\AppCache;
 
-use App\Application;
-use App\Console\ConsoleKernel;
 use Greg\AppCache\Commands\ClearCacheCommand;
 use Greg\Cache\CacheManager;
 use Greg\Cache\RedisCache;
+use Greg\Framework\Application;
+use Greg\Framework\Console\ConsoleKernel;
 use Greg\Framework\ServiceProvider;
 
 class CacheServiceProvider implements ServiceProvider
@@ -54,6 +54,16 @@ class CacheServiceProvider implements ServiceProvider
     public function bootConsoleKernel(ConsoleKernel $kernel)
     {
         $kernel->addCommand(ClearCacheCommand::class);
+    }
+
+    public function install()
+    {
+        $this->app()->fire('app.config.add', __DIR__ . '/../config/config.php', self::CONFIG_NAME);
+    }
+
+    public function uninstall()
+    {
+        $this->app()->fire('app.config.remove', self::CONFIG_NAME);
     }
 
     private function config(string $name)
