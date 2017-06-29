@@ -1,6 +1,6 @@
 # PHP App Cache
 
-[![StyleCI](https://styleci.io/repos/95762863/shield?style=flat)](https://styleci.io/repos/95762863)
+[![StyleCI](https://styleci.io/repos/00000000/shield?style=flat)](https://styleci.io/repos/00000000)
 [![Build Status](https://travis-ci.org/greg-md/php-app-cache.svg)](https://travis-ci.org/greg-md/php-app-cache)
 [![Total Downloads](https://poser.pugx.org/greg-md/php-app-cache/d/total.svg)](https://packagist.org/packages/greg-md/php-app-cache)
 [![Latest Stable Version](https://poser.pugx.org/greg-md/php-app-cache/v/stable.svg)](https://packagist.org/packages/greg-md/php-app-cache)
