@@ -39,7 +39,7 @@ class CacheServiceProvider implements ServiceProvider
                         return new RedisCache($redis);
                     }
 
-                    throw new \Exception('Unsupported cache type `' . $type . '` for `' . $name . '`.');
+                    throw new \Exception('Unsupported cache type `' . $type . '` for `' . $name . '` strategy.');
                 });
             }
 
