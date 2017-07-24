@@ -3,9 +3,11 @@
 namespace Greg\AppCache;
 
 use Greg\AppCache\Commands\ClearCacheCommand;
+use Greg\AppInstaller\Application;
+use Greg\AppInstaller\Events\ConfigAddEvent;
+use Greg\AppInstaller\Events\ConfigRemoveEvent;
 use Greg\Cache\CacheManager;
 use Greg\Cache\RedisCache;
-use Greg\Framework\Application;
 use Greg\Framework\Console\ConsoleKernel;
 use Greg\Framework\ServiceProvider;
 
@@ -56,14 +58,14 @@ class CacheServiceProvider implements ServiceProvider
         $kernel->addCommand(ClearCacheCommand::class);
     }
 
-    public function install()
+    public function install(Application $app)
     {
-        $this->app()->fire('app.config.add', __DIR__ . '/../config/config.php', self::CONFIG_NAME);
+        $app->event(new ConfigAddEvent(__DIR__ . '/../config/config.php', self::CONFIG_NAME));
     }
 
-    public function uninstall()
+    public function uninstall(Application $app)
     {
-        $this->app()->fire('app.config.remove', self::CONFIG_NAME);
+        $app->fire(new ConfigRemoveEvent(self::CONFIG_NAME));
     }
 
     private function config(string $name)
