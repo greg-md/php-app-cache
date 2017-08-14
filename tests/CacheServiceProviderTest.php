@@ -2,16 +2,13 @@
 
 namespace Greg\AppImagix;
 
-use DebugBar\StandardDebugBar;
 use Greg\AppCache\CacheServiceProvider;
 use Greg\AppInstaller\Application;
 use Greg\Cache\CacheManager;
 use Greg\Cache\CacheStrategy;
 use Greg\Cache\RedisCache;
-use Greg\Framework\Http\HttpKernel;
 use Greg\Framework\ServiceProvider;
 use Greg\Support\Dir;
-use Greg\Support\Http\Response;
 use PHPUnit\Framework\TestCase;
 
 class CacheServiceProviderTest extends TestCase
