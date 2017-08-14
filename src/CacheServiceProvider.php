@@ -13,6 +13,8 @@ use Greg\Framework\ServiceProvider;
 
 class CacheServiceProvider implements ServiceProvider
 {
+    const TYPE_REDIS = 'redis';
+
     private const CONFIG_NAME = 'cache';
 
     private $app;
@@ -33,7 +35,7 @@ class CacheServiceProvider implements ServiceProvider
                 $manager->register($name, function () use ($name, $credentials) {
                     $type = $credentials['type'] ?? null;
 
-                    if ($type == 'redis') {
+                    if ($type == self::TYPE_REDIS) {
                         $redis = new \Redis();
 
                         $redis->connect($credentials['host'] ?? '127.0.0.1', $credentials['port'] ?? 6379);
@@ -65,7 +67,7 @@ class CacheServiceProvider implements ServiceProvider
 
     public function uninstall(Application $app)
     {
-        $app->fire(new ConfigRemoveEvent(self::CONFIG_NAME));
+        $app->event(new ConfigRemoveEvent(self::CONFIG_NAME));
     }
 
     private function config(string $name)
