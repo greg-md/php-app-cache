@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greg-md/php-app-installer.git",
-                "reference": "02f889bdc1ff6b2be63bdf9f5f49aabbb0052c2e"
+                "reference": "9db3d81614fb89ff9c45cde2e02ed54826471969"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greg-md/php-app-installer/zipball/02f889bdc1ff6b2be63bdf9f5f49aabbb0052c2e",
-                "reference": "02f889bdc1ff6b2be63bdf9f5f49aabbb0052c2e",
+                "url": "https://api.github.com/repos/greg-md/php-app-installer/zipball/9db3d81614fb89ff9c45cde2e02ed54826471969",
+                "reference": "9db3d81614fb89ff9c45cde2e02ed54826471969",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "php-app-installer",
                 "web-artisans"
             ],
-            "time": "2017-08-17 12:12:16"
+            "time": "2017-08-17 12:42:48"
         },
         {
             "name": "greg-md/php-cache",
@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greg-md/php-framework.git",
-                "reference": "af3101cd9690cf41d016550654f0bc944f6c49b5"
+                "reference": "b89007eb319d98efa809e099dddcbebd236ec97c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greg-md/php-framework/zipball/af3101cd9690cf41d016550654f0bc944f6c49b5",
-                "reference": "af3101cd9690cf41d016550654f0bc944f6c49b5",
+                "url": "https://api.github.com/repos/greg-md/php-framework/zipball/b89007eb319d98efa809e099dddcbebd236ec97c",
+                "reference": "b89007eb319d98efa809e099dddcbebd236ec97c",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "php-framework",
                 "web-artisans"
             ],
-            "time": "2017-08-17 12:10:36"
+            "time": "2017-08-17 12:40:46"
         },
         {
             "name": "greg-md/php-router",
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greg-md/php-router.git",
-                "reference": "f689c38c6100798cfa4c5c578518e015925e65b7"
+                "reference": "c8b8db831c50defd422d326cfd6883eaf20da222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greg-md/php-router/zipball/f689c38c6100798cfa4c5c578518e015925e65b7",
-                "reference": "f689c38c6100798cfa4c5c578518e015925e65b7",
+                "url": "https://api.github.com/repos/greg-md/php-router/zipball/c8b8db831c50defd422d326cfd6883eaf20da222",
+                "reference": "c8b8db831c50defd422d326cfd6883eaf20da222",
                 "shasum": ""
             },
             "require": {
@@ -263,7 +263,7 @@
                 "routing",
                 "web-artisans"
             ],
-            "time": "2017-08-17 11:56:31"
+            "time": "2017-08-17 12:32:45"
         },
         {
             "name": "greg-md/php-support",
