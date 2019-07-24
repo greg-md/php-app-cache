@@ -15,7 +15,7 @@ class CacheServiceProviderTest extends TestCase
 {
     private $rootPath = __DIR__ . '/app';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         Dir::make($this->rootPath);
 
@@ -27,7 +27,7 @@ class CacheServiceProviderTest extends TestCase
         Dir::make($this->rootPath . '/storage');
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         Dir::unlink($this->rootPath);
     }
